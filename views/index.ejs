@@ -6,9 +6,9 @@
     <title>Messages</title>
 </head>
 <body>
-    <% messages.forEach(message => { %>
+    <% posts.rows.forEach(message => { %>
        <div class="message-container">
-            <i>On <%= message.added %> <%= message.user%> wrote:</i>
+            <i>On <%= message.added %> <%= message.username%> wrote:</i>
             <p><%= message.text %></p>
        </div> 
     <% }); %>
